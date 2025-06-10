@@ -11,7 +11,7 @@ const AlbumCard = ({
   album,
   isSelected,
 }: AlbumCardProps): React.ReactElement => {
-  const baseUrl = "/api";
+  const baseUrl = import.meta.env.VITE_BASE_URL;
   const coverImageUrl = `${baseUrl}/getCoverArt`;
 
   const [imageSrc, setImageSrc] = useState<string | null>(null);

@@ -9,7 +9,7 @@ const AlbumsList = (): React.ReactElement => {
   const [albums, setAlbums] = useState<Album[]>([]);
   const galleryRef = useRef<HTMLDivElement>(null);
 
-  const baseUrl = "/api";
+  const baseUrl = import.meta.env.VITE_BASE_URL;
   const recentAlbumsUrl = `${baseUrl}/getAlbumList`;
 
   const albumListParams = {

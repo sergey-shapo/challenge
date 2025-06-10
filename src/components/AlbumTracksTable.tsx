@@ -9,7 +9,7 @@ const AlbumTracksTable = ({
   title,
   albumId,
 }: AlbumTracksTableProps): React.ReactElement => {
-  const baseUrl = "/api";
+  const baseUrl = import.meta.env.VITE_BASE_URL;
   const albumTracksUrl = `${baseUrl}/getAlbum`;
 
   const albumTracksParams = {
