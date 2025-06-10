@@ -9,7 +9,7 @@ const AlbumTracksTable = ({
   title,
   albumId,
 }: AlbumTracksTableProps): React.ReactElement => {
-  const baseUrl = "http://demo.subsonic.org/rest";
+  const baseUrl = "/api";
   const albumTracksUrl = `${baseUrl}/getAlbum`;
 
   const albumTracksParams = {

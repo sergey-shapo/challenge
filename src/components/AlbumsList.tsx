@@ -9,7 +9,7 @@ const AlbumsList = (): React.ReactElement => {
   const [albums, setAlbums] = useState<Album[]>([]);
   const galleryRef = useRef<HTMLDivElement>(null);
 
-  const baseUrl = "http://demo.subsonic.org/rest";
+  const baseUrl = "/api";
   const recentAlbumsUrl = `${baseUrl}/getAlbumList`;
 
   const albumListParams = {

@@ -11,7 +11,7 @@ const AlbumCard = ({
   album,
   isSelected,
 }: AlbumCardProps): React.ReactElement => {
-  const baseUrl = "http://demo.subsonic.org/rest";
+  const baseUrl = "/api";
   const coverImageUrl = `${baseUrl}/getCoverArt`;
 
   const [imageSrc, setImageSrc] = useState<string | null>(null);
