@@ -3,6 +3,7 @@ import useAxios from "../hooks/useAxios";
 import type { Album, Subsonic } from "../types";
 import AlbumCard from "./AlbumCard";
 import AlbumTracksTable from "./AlbumTracksTable";
+import { Carousel } from "flowbite-react/components/Carousel";
 
 const AlbumsList = (): React.ReactElement => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
